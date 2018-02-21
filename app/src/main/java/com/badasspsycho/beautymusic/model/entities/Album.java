@@ -40,6 +40,6 @@ public class Album {
 
     @Override
     public String toString() {
-        return albumName;
+        return albumName + "\n";
     }
 }

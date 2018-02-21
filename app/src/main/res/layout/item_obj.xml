@@ -6,6 +6,7 @@
     android:orientation="horizontal"
     android:gravity="center_vertical"
     android:background="@color/colorWhiteTrans">
+
     <ImageView
         android:id="@+id/iv_object_icon"
         android:layout_width="@dimen/item_image_size"
@@ -13,6 +14,7 @@
         android:src="@drawable/ic_beats_icon"
         android:padding="@dimen/small_padding"
         tools:ignore="ContentDescription" />
+
     <TextView
         android:id="@+id/tv_object_name"
         android:layout_width="match_parent"
@@ -23,4 +25,5 @@
         android:singleLine="true"
         android:layout_marginLeft="@dimen/small_padding"
         android:layout_marginStart="@dimen/small_padding" />
+
 </LinearLayout>

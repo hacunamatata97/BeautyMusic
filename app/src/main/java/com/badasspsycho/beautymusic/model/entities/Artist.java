@@ -40,6 +40,6 @@ public class Artist {
 
     @Override
     public String toString() {
-        return artistName;
+        return artistName + "\n";
     }
 }

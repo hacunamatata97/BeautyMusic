@@ -587,7 +587,7 @@ public class MainActivity extends AppCompatActivity
                 ArrayList<Object> listObj = MusicLoader.searchAll(mSongManager.getSongList(),
                         mSongManager.getAlbumList(), mSongManager.getArtistList(), newText);
                 if (!mSearchMain.isIconified()) mainSearchAdapter.setObjectList(listObj);
-                return true;
+                return false;
             }
         });
         mSearchMain.setOnCloseListener(() -> {

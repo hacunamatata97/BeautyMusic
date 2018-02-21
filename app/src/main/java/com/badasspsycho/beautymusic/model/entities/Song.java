@@ -90,4 +90,9 @@ public class Song implements Parcelable {
         parcel.writeLong(duration);
         parcel.writeString(uri);
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s - %s - %s\n", title, album, artist);
+    }
 }

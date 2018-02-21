@@ -54,7 +54,8 @@
                 android:id="@+id/rv_main_content_searching_suggestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"/>
+                android:background="@color/colorPrimary"
+                android:visibility="invisible"/>
 
         </FrameLayout>
 
