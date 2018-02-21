@@ -1,0 +1,24 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_up_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="@dimen/music_controller_height"
+    sothree:umanoShadowHeight="@dimen/music_controller_shadow">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/component_main_content" />
+
+        <include layout="@layout/component_list_song_detail" />
+
+        <include layout="@layout/component_reorder_playing_list" />
+
+    </FrameLayout>
+
+    <include layout="@layout/component_play_music_screen" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

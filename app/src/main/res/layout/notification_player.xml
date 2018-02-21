@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/notification_player_background">
+
+    <ImageView
+        android:id="@+id/iv_notification_album_art"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/album_art_background"
+        android:src="@drawable/ic_album_white_24dp"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/iv_notification_next"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:src="@drawable/button_skip_next_white"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/iv_notification_play_pause"
+        android:layout_width="44dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/iv_notification_next"
+        android:layout_toStartOf="@+id/iv_notification_next"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:src="@drawable/button_play_white"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/iv_notification_prev"
+        android:layout_width="34dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/iv_notification_play_pause"
+        android:layout_toStartOf="@+id/iv_notification_play_pause"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:src="@drawable/button_skip_prev_white"
+        tools:ignore="ContentDescription"/>
+
+
+    <LinearLayout
+        android:id="@+id/notification_track_info"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/iv_notification_album_art"
+        android:layout_toLeftOf="@+id/iv_notification_prev"
+        android:layout_toRightOf="@+id/iv_notification_album_art"
+        android:layout_toStartOf="@+id/iv_notification_prev"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_notification_track_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="@string/default_title"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_notification_track_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:text="@string/default_artist"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

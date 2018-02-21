@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteTrans"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_order_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_normal"
+        android:layout_marginStart="@dimen/padding_normal"
+        android:background="@drawable/ic_order_indicator"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:layout_width="@dimen/item_image_size"
+        android:layout_height="@dimen/item_image_size"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/ic_beats_icon"
+        tools:ignore="ContentDescription"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/default_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_item_song_title_size"
+            tools:ignore="RelativeOverlap"/>
+
+        <TextView
+            android:id="@+id/tv_song_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_song_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/default_artist"
+            android:textSize="@dimen/text_item_artist_size"/>
+
+        <ImageView
+            android:id="@+id/iv_playing_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/small_padding"
+            android:src="@drawable/ic_play_circle_fill_24dp"
+            android:visibility="gone"
+            tools:ignore="ContentDescription"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

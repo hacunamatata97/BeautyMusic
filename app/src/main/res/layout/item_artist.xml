@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhiteTrans">
+
+    <ImageView
+        android:id="@+id/iv_artist_art"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inner_grid_height"
+        android:background="@color/colorPrimaryTrans"
+        android:gravity="center"
+        android:padding="@dimen/padding_large">
+
+        <TextView
+            android:id="@+id/tv_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_artist"
+            android:textSize="@dimen/text_item_song_title_size"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv_artist_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_title"
+            android:textSize="@dimen/text_item_artist_size"
+            android:textColor="@color/white"
+            android:layout_below="@id/tv_artist_name"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

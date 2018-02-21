@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="track_selected">#8ac0cc</color>
+    <color name="track_unselected">#c7c7c7</color>
+    <color name="group_details_color">#505050</color>
+    <color name="album_art_background">#1e1e1e</color>
+    <color name="notification_player_background">#251541</color>
+
+    <color name="primary_500">#3F51B5</color>
+    <color name="black_trans80">#33000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="lightGray">#F2F2F2</color>
+    <color name="pink">#FF69B4</color>
+    <color name="lightBlue">#E6E6FA</color>
+
+    <color name="colorPrimaryTrans">#501fab03</color>
+    <color name="colorWhiteTrans">#99FFFFFF</color>
+
+    <color name="backGroundGray">#cac7c7</color>
+    <color name="play_bar_background">#434343</color>
+</resources>
